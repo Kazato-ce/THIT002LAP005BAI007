@@ -52,6 +52,13 @@ double CVector::tichVoHuong(const CVector& other) const {
     }
     return tong;
 }
+double& CVector::operator[](int i) {
+    return data[i];
+}
+
+double CVector::operator[](int i) const {
+    return data[i];
+}
 
 CVector CVector::operator+(const CVector& other) const {
     if (data.size() != other.data.size())
