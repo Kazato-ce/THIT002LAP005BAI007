@@ -17,7 +17,8 @@ public:
     int layChieu() const;             // Đổi tên
     double doDai() const;
     double tichVoHuong(const CVector& other) const;
-
+    double& operator[](int i);      
+    double operator[](int i) const;  
     CVector operator+(const CVector& other) const;
     CVector operator-(const CVector& other) const;
     bool operator==(const CVector& other) const;
